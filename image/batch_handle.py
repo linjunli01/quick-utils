@@ -5,8 +5,8 @@ from PIL import Image
 import numpy as np
 from decimate import decimate
 
-RESOURCE_PATH = '/home/unitx/PycharmProjects/unit-test/image_binning_test/resource/image/'
-OUTPUT_PATH = '/home/unitx/PycharmProjects/unit-test/image_binning_test/output/image/'
+RESOURCE_PATH = '/image/path'
+OUTPUT_PATH = '/image/path'
 RESOURCE_IMAGES = []
 PROCESS_NUM = 5
 
