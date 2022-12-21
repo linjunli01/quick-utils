@@ -1,5 +1,6 @@
 import os
 import sys
+import time
 
 
 class ProgressBar(object):
@@ -37,3 +38,12 @@ class ProgressBar(object):
     def flush(self):
         sys.stdout.write(self.get_bar)
         sys.stdout.flush()
+
+
+if __name__ == '__main__':
+    bar = ProgressBar('test', 100)
+    i = 0
+    while i < 100:
+        bar.update()
+        time.sleep(0.25)
+        i += 1
